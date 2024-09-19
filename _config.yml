@@ -29,8 +29,22 @@ github_username:  drax-lang
 
 # Build settings
 theme: minima
+
 plugins:
   - jekyll-feed
+
+collections:
+  docs:
+    output: true
+
+exclude_from_menu:
+  - "/docs/*"
+
+header_pages:
+  - index.markdown
+  - installation.markdown
+  - documentation.markdown
+  - about.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
