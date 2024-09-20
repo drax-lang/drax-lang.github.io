@@ -39,7 +39,7 @@ fun sum(a) do
     a + 1
 end
 
-ref = &sum/1
+ref = sum
 
 fun sum(a) do
     a + 50

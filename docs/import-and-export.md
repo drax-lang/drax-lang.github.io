@@ -42,13 +42,13 @@ To export functions or variables from a file, use the `export` keyword with the 
 
 ```drax
 export({
-    function_alias: &function_name/arity,
+    function_alias: function_name,
     variable_alias: variable_name
 })
 ```
 
 - **function_alias**: The name to be assigned to the function when exported.
-- **&function_name/arity**: The function reference with its arity (number of arguments).
+- **function_name**: The function reference.
 - **variable_alias**: The name to be assigned to the exported variable.
 - **variable_name**: The name of the variable inside the module.
 
@@ -64,7 +64,7 @@ fun calc_two(a, b) do
 end
 
 export({
-    calc: &calc_two/2,
+    calc: calc_two,
     name: name
 })
 ```
@@ -89,7 +89,7 @@ fun calc_two(a, b) do
 end
 
 export({
-    calc: &calc_two/2,
+    calc: calc_two,
     name: name
 })
 ```
@@ -99,9 +99,9 @@ export({
 lib = import('path/lib1.dx')
 
 result = lib.calc(3, 7)
-print(result)  // Output: 21
+print(result)  # Output: 21
 
-print(lib.name)  // Output: drax language
+print(lib.name)  # Output: drax language
 ```
 
 to run, simply run: `drax main.dx`

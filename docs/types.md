@@ -50,7 +50,7 @@ you can access and combine strings
 ```drax
   > "foo" ++ "bar"
   "foobar"
-  > "foo"[0]
+  > String.at("foo", 0)
   "f"
 ```
 
@@ -103,14 +103,11 @@ Examples:
   > String.copy("drax lang", 0, 0)
   ""
 ```   
-**get**: this function returns the character of the index that is passed as an argument.
-however it is much more common to use `[` ` ]` which internally maps to the `get` function
+**at**: this function returns the character of the index that is passed as an argument.
 ```drax
-  > String.get("drax lang", 0)
+  > String.at("drax lang", 0)
   "d"
 
-  > "drax lang"[0]
-  "d"
 ```  
 
 ---
@@ -128,17 +125,14 @@ This structure is not limited to a single data type, for example:
 
 Examples: 
 ```drax
-  > ["foo", "bar"].length
+  > List.length(["foo", "bar"])
   2
 ```
 
-**get**: this function returns the element of the index that is passed as an argument.
-however it is much more common to use `[` ` ]` which internally maps to the `get` function
-```drax
-  > ["drax", "lang"].get(0)
-  "drax"
+**at**: this function returns the element of the index that is passed as an argument.
 
-  > ["drax", "lang"][0]
+```drax
+  > List.at(["drax", "lang"], 0)
   "drax"
 ```  
 
@@ -147,7 +141,7 @@ however it is much more common to use `[` ` ]` which internally maps to the `get
 ### Frame
 frame is the main structure that stores data like key and value.
 
-`.` is used to fetch the elements of that structure, for example:
+The dot (`.`) is used to fetch the elements of that structure, for example:
 
 
 ```drax

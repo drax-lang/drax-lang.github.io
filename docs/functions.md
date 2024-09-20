@@ -31,7 +31,7 @@ sum(1,2,3)   # => error: function 'sum/3' is not defined
 If you want to get a function definition to manipulate, you can do it using the `&` operator.
 
 ```drax
-myfun = &sum/2
+myfun = sum
 ```
 
 note that it is necessary to inform how many arguments my function has, as there may be several definitions with the same name
@@ -44,7 +44,7 @@ are considered anonymous functions, as they do not have names.
 Here is an example of use:
 
 ```drax
-myfun = lambda (a, b) a + b end
+myfun = fun (a, b) a + b end
 myfun()
 ```
 
