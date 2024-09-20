@@ -44,6 +44,7 @@ header_pages:
   - index.markdown
   - installation.markdown
   - documentation.markdown
+  - community.markdown
   - about.markdown
 
 # Exclude from processing.
