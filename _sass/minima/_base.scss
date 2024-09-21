@@ -252,3 +252,13 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+.hint {
+  color: #61300f;
+  background-color: rgb(255, 214, 138);
+  min-height: 65px !important;
+  font-size: 18px;
+  padding: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
