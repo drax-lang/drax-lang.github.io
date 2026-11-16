@@ -26,7 +26,15 @@ The language server is a lightweight analyser, not a type checker. Go to definit
 
 ## VS Code
 
-Build and install the **Drax** extension from the `drax-ls` repository (it needs Node.js):
+Install the **Drax** extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=drax-lang.drax-lang). In VS Code, open the Extensions view, search for `Drax`, or run:
+
+```sh
+code --install-extension drax-lang.drax-lang
+```
+
+The language server is bundled in the extension, you do not need to install anything else. It can be turned off with the setting `drax.languageServer.enabled`.
+
+To build the extension from source (it needs Node.js):
 
 ```sh
 git clone https://github.com/drax-lang/drax-ls.git
@@ -35,8 +43,6 @@ npm install
 npm run package
 code --install-extension drax-lang-0.1.0.vsix
 ```
-
-The language server is bundled in the extension, you do not need to install anything else. It can be turned off with the setting `drax.languageServer.enabled`.
 
 ## Neovim
 

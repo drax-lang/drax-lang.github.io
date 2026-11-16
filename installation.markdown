@@ -95,7 +95,7 @@ See [Packages](/docs/packages.html).
 
 ## Editor support
 
-Syntax highlighting, go to definition, hover, completion and diagnostics for VS Code, Vim and Neovim: [Editor support](/docs/editors.html).
+Syntax highlighting, go to definition, hover, completion and diagnostics for VS Code, Vim and Neovim: [Editor support](/docs/editors.html). In VS Code, install the extension with `code --install-extension drax-lang.drax-lang`.
 
 ## Run the tests
 
