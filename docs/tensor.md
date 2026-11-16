@@ -1,3 +1,11 @@
+---
+layout: page
+title: "Tensor"
+menu_exclude: true
+---
+
+> **Removed.** Tensors are no longer part of the language. This page is kept only for reference.
+
 # Tensor
 
 tensors is the way to work with numbers in drax.

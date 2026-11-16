@@ -30,7 +30,7 @@ In this example, we are importing a module from `'path/lib1.dx'` and assigning i
 lib = import('path/lib1.dx')
 
 result = lib.calc(5, 10)
-print(result)  // Output will be the result of calc_two(5, 10)
+print(result)  # Output will be the result of calc_two(5, 10)
 ```
 
 In this case, we assume that the module `lib1.dx` contains an exported function called `calc` that performs some calculation.

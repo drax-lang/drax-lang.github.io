@@ -86,7 +86,7 @@ The `math` module in Drax provides a set of essential mathematical functions for
 - **Examples**:
   ```drax
   > Math.atan(1)
-  0.785398 // Equivalent to π/4 in radians
+  0.785398 # Equivalent to π/4 in radians
   ```
 
 ### atan2
@@ -94,7 +94,7 @@ The `math` module in Drax provides a set of essential mathematical functions for
 - **Examples**:
   ```drax
   > Math.atan2(1, 1)
-  0.785398  // Equivalent to π/4 in radians
+  0.785398  # Equivalent to π/4 in radians
   ```
 
 ### exp
@@ -102,7 +102,7 @@ The `math` module in Drax provides a set of essential mathematical functions for
 - **Examples**:
   ```drax
   > Math.exp(1)
-  2.71828  // The value of e
+  2.71828  # The value of e
   ```
 
 ### fabs
