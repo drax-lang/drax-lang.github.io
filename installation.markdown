@@ -88,6 +88,8 @@ Continue with [Getting started](/docs/getting-started.html).
 
 ```sh
 make -C dmr            # from the drax repository
+dmr init               # creates a default package.toml
+dmr add drax-lang/griht   # adds a dependency (GitHub, git url or path)
 dmr install            # reads package.toml, writes ./lib and package.lock
 ```
 
