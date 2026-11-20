@@ -23,7 +23,7 @@ title: Drax Language
 description: >- # this means to ignore newlines until "baseurl:"
   Write secure applications simply and efficiently
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://drax-lang.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://drax-lang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: drax-lang
 github_username:  drax-lang
 

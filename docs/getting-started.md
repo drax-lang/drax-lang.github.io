@@ -10,6 +10,19 @@ This page is a quick tour. Every example below was run with the interpreter, and
 
 Drax is dynamically typed and functional. There are no `for` or `while` loops: repetition is recursion, and [tail calls](/docs/recursion-and-tail-calls.html) run in constant memory. Files use the `.dx` extension and comments start with `#`.
 
+## Printing
+
+`print` writes a string as it is, and everything else in its text form. `inspect` writes the value the way it is written in the code, with strings quoted and escaped, and returns it, which is handy inside a pipe. The interactive shell, lists and frames always show strings quoted, so `"1"` and `1`, or `"a, b"` and two elements, can not be mistaken.
+
+```drax
+print("hello")     # hello
+inspect("hello")   # "hello"
+print(["a", 1])   # ["a", 1]
+print(0.1 + 0.2)   # 0.30000000000000004
+```
+
+Numbers are written with the fewest digits that read back as the same number, and `Number.to_string` gives the same text.
+
 ## Running code
 
 ```sh
@@ -42,8 +55,8 @@ print(greet("Drax", "Hi"))
 ```
 
 ```
-"Hello, Drax"
-"Hi, Drax"
+Hello, Drax
+Hi, Drax
 ```
 
 The same name can have several definitions with different numbers of arguments. `++` joins strings and lists. See [Functions](/docs/functions.html).
@@ -57,7 +70,7 @@ fun sign(n) do
   if (n < 0) do "negative" else "positive" end
 end
 
-print(sign(-1))      # "negative"
+print(sign(-1))      # negative
 ```
 
 ## Lists, lambdas and the pipe operator
@@ -75,8 +88,8 @@ Lists and frames are immutable: `List.pop`, `Frame.put` and the others return a 
 ```drax
 user = { name: "Tom", age: 30 }
 
-print(user.name)                      # "Tom"
-print(Frame.put(user, "city", "Rio")) # {'name': Tom, 'age': 30, 'city': Rio}
+print(user.name)                      # Tom
+print(Frame.put(user, "city", "Rio")) # {'name': "Tom", 'age': 30, 'city': "Rio"}
 ```
 
 ## Loops are recursion

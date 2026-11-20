@@ -14,6 +14,16 @@ Drax is a single C99 program. There is nothing to download but the source: you o
 | `git` | cloning the source and `dmr` (the package manager) |
 | `libedit` *(optional)* | line editing and history in the interactive shell |
 
+## Quick install
+
+On Linux, macOS and BSD one command downloads the source, builds `drax` and `dmr` and copies them to `~/.local/bin` (it never uses sudo):
+
+```sh
+curl -fsSL https://drax-lang.github.io/install.sh | sh
+```
+
+Options go after `sh -s --`, for example `--prefix /usr/local`, `--ref v0.1.0`, `--no-dmr`, `--light` or `--uninstall`. You can [read the script](/install.sh) first, or download it and run `sh install.sh --help`.
+
 ## Build from source
 
 ```sh
@@ -68,7 +78,7 @@ and run it:
 
 ```sh
 $ drax hello.dx
-"Welcome, Tom"
+Welcome, Tom
 ```
 
 Running `drax` with no arguments opens the interactive shell:

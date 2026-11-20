@@ -20,6 +20,7 @@ You can access the reference manuals for all versions of Drax online, with docum
 * [Import and Export](/docs/import-and-export.html)
 * [Recursion and tail calls](/docs/recursion-and-tail-calls.html)
 * [Imports](/docs/imports.html)
+* [Error handling](/docs/error-handling.html)
 
 ### Libraries and tools
 
@@ -29,6 +30,9 @@ You can access the reference manuals for all versions of Drax online, with docum
 * [Packages (dmr)](/docs/packages.html)
 * [Code graph for LLMs](/docs/graph.html)
 * [Editor support](/docs/editors.html)
+* [Safe mode and permissions](/docs/safe-mode.html)
+* [Native extensions](/docs/native-extensions.html)
+* [Writing extensions](/docs/writing-extensions.html)
 
 ### Internals
 
